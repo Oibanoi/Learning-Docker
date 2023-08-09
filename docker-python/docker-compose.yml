@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  app:
+    image: learning-docker/python:v1
+    ports:
+      - "5000:6666"
+    restart: unless-stopped
+    environment:
+      PORT: 6666
